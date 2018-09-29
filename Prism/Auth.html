@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.26.1">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../";
+</script>
+
+  <meta id="repository-name" content="github.com/vladfaust/prism">
+  <title>Prism::Auth(Authenticator) - github.com/vladfaust/prism</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false">
+    </div>
+
+    <div class="repository-links">
+      <a href="../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Array" data-name="array(t)">
+      <a href="../Array.html">Array</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Bool" data-name="bool">
+      <a href="../Bool.html">Bool</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Float" data-name="float">
+      <a href="../Float.html">Float</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/HTTP" data-name="http">
+      <a href="../HTTP.html">HTTP</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/HTTP/Request" data-name="http::request">
+      <a href="../HTTP/Request.html">Request</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Int" data-name="int">
+      <a href="../Int.html">Int</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Nil" data-name="nil">
+      <a href="../Nil.html">Nil</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Null" data-name="null">
+      <a href="../Null.html">Null</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/vladfaust/prism/Prism" data-name="prism">
+      <a href="../Prism.html">Prism</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Action" data-name="prism::action">
+      <a href="../Prism/Action.html">Action</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Action/Auth" data-name="prism::action::auth(authenticator)">
+      <a href="../Prism/Action/Auth.html">Auth</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Action/Params" data-name="prism::action::params">
+      <a href="../Prism/Action/Params.html">Params</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/vladfaust/prism/Prism/Auth" data-name="prism::auth(authenticator)">
+      <a href="../Prism/Auth.html">Auth</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Authenticator" data-name="prism::authenticator">
+      <a href="../Prism/Authenticator.html">Authenticator</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Channel" data-name="prism::channel">
+      <a href="../Prism/Channel.html">Channel</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Channel/Auth" data-name="prism::channel::auth(authenticator)">
+      <a href="../Prism/Channel/Auth.html">Auth</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Channel/Params" data-name="prism::channel::params">
+      <a href="../Prism/Channel/Params.html">Params</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/CORS" data-name="prism::cors">
+      <a href="../Prism/CORS.html">CORS</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/LogHandler" data-name="prism::loghandler">
+      <a href="../Prism/LogHandler.html">LogHandler</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Params" data-name="prism::params">
+      <a href="../Prism/Params.html">Params</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/InvalidParamError" data-name="prism::params::invalidparamerror">
+      <a href="../Prism/Params/InvalidParamError.html">InvalidParamError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/InvalidParamTypeError" data-name="prism::params::invalidparamtypeerror">
+      <a href="../Prism/Params/InvalidParamTypeError.html">InvalidParamTypeError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/ParamNotFoundError" data-name="prism::params::paramnotfounderror">
+      <a href="../Prism/Params/ParamNotFoundError.html">ParamNotFoundError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/ProcError" data-name="prism::params::procerror">
+      <a href="../Prism/Params/ProcError.html">ProcError</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Params/Validation" data-name="prism::params::validation">
+      <a href="../Prism/Params/Validation.html">Validation</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/Validation/Error" data-name="prism::params::validation::error">
+      <a href="../Prism/Params/Validation/Error.html">Error</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/ProcHandler" data-name="prism::prochandler">
+      <a href="../Prism/ProcHandler.html">ProcHandler</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Router" data-name="prism::router">
+      <a href="../Prism/Router.html">Router</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Router/DuplicateRouteError" data-name="prism::router::duplicaterouteerror">
+      <a href="../Prism/Router/DuplicateRouteError.html">DuplicateRouteError</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Server" data-name="prism::server">
+      <a href="../Prism/Server.html">Server</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/String" data-name="string">
+      <a href="../String.html">String</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Time" data-name="time">
+      <a href="../Time.html">Time</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Time/Span" data-name="time::span">
+      <a href="../Time/Span.html">Span</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Union" data-name="union(*t)">
+      <a href="../Union.html">Union</a>
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">module</span> Prism::Auth(Authenticator)
+
+</h1>
+
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>A versatile auth module.</p>
+
+<pre><code><span class="k">class</span> <span class="t">Authenticator</span>
+  <span class="k">include</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Authenticator</span>
+
+  <span class="k">enum</span> <span class="t">Scope</span>
+    <span class="t">User</span>
+    <span class="t">Admin</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">user</span>
+    user?.not_nil!
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">user?</span>
+    @user ||= <span class="t">User</span>.find(<span class="o">&amp;</span>.token.<span class="o">==</span> @token)
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">initialize</span>(@token : <span class="t">String</span>?)
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="k">struct</span> <span class="t">MyAction</span>
+  <span class="k">include</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Action</span>
+  <span class="k">include</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Auth</span>(<span class="t">Authenticator</span>)
+
+  <span class="k">def</span> <span class="m">call</span>
+    <span class="c"># Check if auth object exists in current request before</span>
+    <span class="k">if</span> auth?.try <span class="o">&amp;</span>.user?
+      auth.user <span class="c"># It would return a non-nil User instance</span>
+    <span class="k">else</span>
+      halt!(<span class="n">401</span>)
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre>
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Direct including types</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type"><a href="../Prism/Action/Auth.html">Prism::Action::Auth(Authenticator)</a></li>
+  
+    <li class="other-type"><a href="../Prism/Channel/Auth.html">Prism::Channel::Auth(Authenticator)</a></li>
+  
+  </ul>
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/auth.cr#L41" target="_blank">
+        prism/auth.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Macro Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#auth-macro" class="signature"><strong>auth</strong></a>
+        
+          <div class="summary"><p>Return a non-nil authenticator object contained in the request, otherwise raise.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#auth%3F-macro" class="signature"><strong>auth?</strong></a>
+        
+          <div class="summary"><p>Safe authenticator object check.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+<div class="methods-inherited">
+  
+</div>
+
+
+
+
+
+
+
+
+  <h2>Macro Detail</h2>
+  
+    <div class="entry-detail" id="auth-macro">
+      <div class="signature">
+        
+        macro <strong>auth</strong>
+
+        <a class="method-permalink" href="#auth-macro">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a non-nil authenticator object contained in the request, otherwise raise. See <code><a href="../HTTP/Request.html#auth%3APrism%3A%3AAuthenticator%3F-instance-method">HTTP::Request.auth</a></code>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/auth.cr#L43" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="auth?-macro">
+      <div class="signature">
+        
+        macro <strong>auth?</strong>
+
+        <a class="method-permalink" href="#auth%3F-macro">#</a>
+      </div>
+      
+        <div class="doc"><p>Safe authenticator object check. Returns nil if <code>context.request<a href="../Prism/Auth.html#auth-macro">.auth</a></code> is empty.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/auth.cr#L48" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.26.1">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../";
+</script>
+
+  <meta id="repository-name" content="github.com/vladfaust/prism">
+  <title>Prism::Channel - github.com/vladfaust/prism</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false">
+    </div>
+
+    <div class="repository-links">
+      <a href="../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Array" data-name="array(t)">
+      <a href="../Array.html">Array</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Bool" data-name="bool">
+      <a href="../Bool.html">Bool</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Float" data-name="float">
+      <a href="../Float.html">Float</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/HTTP" data-name="http">
+      <a href="../HTTP.html">HTTP</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/HTTP/Request" data-name="http::request">
+      <a href="../HTTP/Request.html">Request</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Int" data-name="int">
+      <a href="../Int.html">Int</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Nil" data-name="nil">
+      <a href="../Nil.html">Nil</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Null" data-name="null">
+      <a href="../Null.html">Null</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/vladfaust/prism/Prism" data-name="prism">
+      <a href="../Prism.html">Prism</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Action" data-name="prism::action">
+      <a href="../Prism/Action.html">Action</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Action/Auth" data-name="prism::action::auth(authenticator)">
+      <a href="../Prism/Action/Auth.html">Auth</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Action/Params" data-name="prism::action::params">
+      <a href="../Prism/Action/Params.html">Params</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Auth" data-name="prism::auth(authenticator)">
+      <a href="../Prism/Auth.html">Auth</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Authenticator" data-name="prism::authenticator">
+      <a href="../Prism/Authenticator.html">Authenticator</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/vladfaust/prism/Prism/Channel" data-name="prism::channel">
+      <a href="../Prism/Channel.html">Channel</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Channel/Auth" data-name="prism::channel::auth(authenticator)">
+      <a href="../Prism/Channel/Auth.html">Auth</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Channel/Params" data-name="prism::channel::params">
+      <a href="../Prism/Channel/Params.html">Params</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/CORS" data-name="prism::cors">
+      <a href="../Prism/CORS.html">CORS</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/LogHandler" data-name="prism::loghandler">
+      <a href="../Prism/LogHandler.html">LogHandler</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Params" data-name="prism::params">
+      <a href="../Prism/Params.html">Params</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/InvalidParamError" data-name="prism::params::invalidparamerror">
+      <a href="../Prism/Params/InvalidParamError.html">InvalidParamError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/InvalidParamTypeError" data-name="prism::params::invalidparamtypeerror">
+      <a href="../Prism/Params/InvalidParamTypeError.html">InvalidParamTypeError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/ParamNotFoundError" data-name="prism::params::paramnotfounderror">
+      <a href="../Prism/Params/ParamNotFoundError.html">ParamNotFoundError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/ProcError" data-name="prism::params::procerror">
+      <a href="../Prism/Params/ProcError.html">ProcError</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Params/Validation" data-name="prism::params::validation">
+      <a href="../Prism/Params/Validation.html">Validation</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/Validation/Error" data-name="prism::params::validation::error">
+      <a href="../Prism/Params/Validation/Error.html">Error</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/ProcHandler" data-name="prism::prochandler">
+      <a href="../Prism/ProcHandler.html">ProcHandler</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Router" data-name="prism::router">
+      <a href="../Prism/Router.html">Router</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Router/DuplicateRouteError" data-name="prism::router::duplicaterouteerror">
+      <a href="../Prism/Router/DuplicateRouteError.html">DuplicateRouteError</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Server" data-name="prism::server">
+      <a href="../Prism/Server.html">Server</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/String" data-name="string">
+      <a href="../String.html">String</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Time" data-name="time">
+      <a href="../Time.html">Time</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Time/Span" data-name="time::span">
+      <a href="../Time/Span.html">Span</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Union" data-name="union(*t)">
+      <a href="../Union.html">Union</a>
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">module</span> Prism::Channel
+
+</h1>
+
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>A callable websocket Channel with <a href="https://github.com/vladfaust/callbacks.cr" target="_blank">Callbacks</a> module included.</p>
+
+<pre><code><span class="k">class</span> <span class="t">UserNotifications</span>
+  <span class="k">include</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Channel</span>
+  <span class="k">include</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Channel</span><span class="t">::</span><span class="t">Auth</span>
+  <span class="k">include</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Channel</span><span class="t">::</span><span class="t">Params</span>
+
+  <span class="c"># Will close the socket if unauthorized</span>
+  auth!
+
+  <span class="c"># Will close the socket on params validation error</span>
+  params <span class="k">do</span>
+    <span class="k">type</span> foo : <span class="t">String</span>?
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">self</span>.notify(user : <span class="t">User</span>, payload : <span class="t">String</span>)
+    <span class="k">if</span> socket <span class="o">=</span> @@subscriptions[user]?
+      socket.notify(payload)
+    <span class="k">end</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">on_open</span>
+    @@subscriptions[auth.user] <span class="o">=</span> <span class="k">self</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">notify</span>(payload : <span class="t">String</span>)
+    socket.send(payload)
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">on_close</span>
+    @@subscriptions[auth.user] <span class="o">=</span> <span class="n">nil</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+router <span class="o">=</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Router</span>.<span class="k">new</span> <span class="k">do</span>
+  ws <span class="s">&quot;/notifications&quot;</span> <span class="k">do</span> <span class="o">|</span>socket, env<span class="o">|</span>
+    <span class="t">UserNotifications</span>.subscribe(socket, env)
+    <span class="c"># Or</span>
+    <span class="t">UserNotifications</span>.call(socket, env)
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c"># Later in the code</span>
+
+<span class="t">UserNotifications</span>.notify(user, <span class="s">&quot;You&#39;ve got a message!&quot;</span>)</code></pre>
+
+
+
+
+
+  <h2>Included Modules</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type">Callbacks</li>
+  
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/channel/auth.cr#L4" target="_blank">
+        prism/channel/auth.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/channel/params.cr#L4" target="_blank">
+        prism/channel/params.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/channel.cr#L54" target="_blank">
+        prism/channel.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#after-instance-method" class="signature"><strong>#after</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#around%28%26block%29-instance-method" class="signature"><strong>#around</strong>(&block)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#before-instance-method" class="signature"><strong>#before</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#context%3AHTTP%3A%3AServer%3A%3AContext-instance-method" class="signature"><strong>#context</strong> : HTTP::Server::Context</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#on_binary%28binary%29-instance-method" class="signature"><strong>#on_binary</strong>(binary)</a>
+        
+          <div class="summary"><p>Called when the socket receives a binary message from client.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#on_close-instance-method" class="signature"><strong>#on_close</strong></a>
+        
+          <div class="summary"><p>Called once when the socket closes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#on_message%28message%29-instance-method" class="signature"><strong>#on_message</strong>(message)</a>
+        
+          <div class="summary"><p>Called when the socket receives a message from client.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#on_open-instance-method" class="signature"><strong>#on_open</strong></a>
+        
+          <div class="summary"><p>Called once when a new socket is opened.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#on_ping-instance-method" class="signature"><strong>#on_ping</strong></a>
+        
+          <div class="summary"><p>Called when the socket receives a PING message from client.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#on_pong-instance-method" class="signature"><strong>#on_pong</strong></a>
+        
+          <div class="summary"><p>Called when the socket receives a PONG message from client.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#socket%3AHTTP%3A%3AWebSocket-instance-method" class="signature"><strong>#socket</strong> : HTTP::WebSocket</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#subscribe-instance-method" class="signature"><strong>#subscribe</strong></a>
+        
+          <div class="summary"><p>Call <code><a href="../Prism/Channel.html#on_open-instance-method">#on_open</a></code> and bind to the <code><a href="../Prism/Channel.html#socket%3AHTTP%3A%3AWebSocket-instance-method">#socket</a></code>'s events.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#subscribe_with_callbacks-instance-method" class="signature"><strong>#subscribe_with_callbacks</strong></a>
+        
+          <div class="summary"><p>Subscribe to channel with <a href="https://github.com/vladfaust/callbacks.cr" target="_blank">callbacks</a>.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="after-instance-method">
+      <div class="signature">
+        
+        def <strong>after</strong>
+
+        <a class="method-permalink" href="#after-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/channel.cr#L55" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="around(&amp;block)-instance-method">
+      <div class="signature">
+        
+        def <strong>around</strong>(&block)
+
+        <a class="method-permalink" href="#around%28%26block%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/channel.cr#L55" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="before-instance-method">
+      <div class="signature">
+        
+        def <strong>before</strong>
+
+        <a class="method-permalink" href="#before-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/channel.cr#L55" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="context:HTTP::Server::Context-instance-method">
+      <div class="signature">
+        
+        def <strong>context</strong> : HTTP::Server::Context
+
+        <a class="method-permalink" href="#context%3AHTTP%3A%3AServer%3A%3AContext-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/channel.cr#L124" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="on_binary(binary)-instance-method">
+      <div class="signature">
+        
+        def <strong>on_binary</strong>(binary)
+
+        <a class="method-permalink" href="#on_binary%28binary%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Called when the socket receives a binary message from client.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/channel.cr#L66" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="on_close-instance-method">
+      <div class="signature">
+        
+        def <strong>on_close</strong>
+
+        <a class="method-permalink" href="#on_close-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Called once when the socket closes.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/channel.cr#L79" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="on_message(message)-instance-method">
+      <div class="signature">
+        
+        def <strong>on_message</strong>(message)
+
+        <a class="method-permalink" href="#on_message%28message%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Called when the socket receives a message from client.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/channel.cr#L62" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="on_open-instance-method">
+      <div class="signature">
+        
+        def <strong>on_open</strong>
+
+        <a class="method-permalink" href="#on_open-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Called once when a new socket is opened.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/channel.cr#L58" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="on_ping-instance-method">
+      <div class="signature">
+        
+        def <strong>on_ping</strong>
+
+        <a class="method-permalink" href="#on_ping-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Called when the socket receives a PING message from client.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/channel.cr#L70" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="on_pong-instance-method">
+      <div class="signature">
+        
+        def <strong>on_pong</strong>
+
+        <a class="method-permalink" href="#on_pong-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Called when the socket receives a PONG message from client.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/channel.cr#L75" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="socket:HTTP::WebSocket-instance-method">
+      <div class="signature">
+        
+        def <strong>socket</strong> : HTTP::WebSocket
+
+        <a class="method-permalink" href="#socket%3AHTTP%3A%3AWebSocket-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/channel.cr#L125" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="subscribe-instance-method">
+      <div class="signature">
+        
+        def <strong>subscribe</strong>
+
+        <a class="method-permalink" href="#subscribe-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Call <code><a href="../Prism/Channel.html#on_open-instance-method">#on_open</a></code> and bind to the <code><a href="../Prism/Channel.html#socket%3AHTTP%3A%3AWebSocket-instance-method">#socket</a></code>'s events. Read more in <a href="https://crystal-lang.org/api/0.23.1/HTTP/WebSocket.html" target="_blank">Crystal API docs</a>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/channel.cr#L95" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="subscribe_with_callbacks-instance-method">
+      <div class="signature">
+        
+        def <strong>subscribe_with_callbacks</strong>
+
+        <a class="method-permalink" href="#subscribe_with_callbacks-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Subscribe to channel with <a href="https://github.com/vladfaust/callbacks.cr" target="_blank">callbacks</a>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/channel.cr#L120" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

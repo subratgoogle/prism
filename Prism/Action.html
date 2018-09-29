@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.26.1">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../";
+</script>
+
+  <meta id="repository-name" content="github.com/vladfaust/prism">
+  <title>Prism::Action - github.com/vladfaust/prism</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false">
+    </div>
+
+    <div class="repository-links">
+      <a href="../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Array" data-name="array(t)">
+      <a href="../Array.html">Array</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Bool" data-name="bool">
+      <a href="../Bool.html">Bool</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Float" data-name="float">
+      <a href="../Float.html">Float</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/HTTP" data-name="http">
+      <a href="../HTTP.html">HTTP</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/HTTP/Request" data-name="http::request">
+      <a href="../HTTP/Request.html">Request</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Int" data-name="int">
+      <a href="../Int.html">Int</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Nil" data-name="nil">
+      <a href="../Nil.html">Nil</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Null" data-name="null">
+      <a href="../Null.html">Null</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/vladfaust/prism/Prism" data-name="prism">
+      <a href="../Prism.html">Prism</a>
+      
+        <ul>
+  
+  <li class="parent open current" data-id="github.com/vladfaust/prism/Prism/Action" data-name="prism::action">
+      <a href="../Prism/Action.html">Action</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Action/Auth" data-name="prism::action::auth(authenticator)">
+      <a href="../Prism/Action/Auth.html">Auth</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Action/Params" data-name="prism::action::params">
+      <a href="../Prism/Action/Params.html">Params</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Auth" data-name="prism::auth(authenticator)">
+      <a href="../Prism/Auth.html">Auth</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Authenticator" data-name="prism::authenticator">
+      <a href="../Prism/Authenticator.html">Authenticator</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Channel" data-name="prism::channel">
+      <a href="../Prism/Channel.html">Channel</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Channel/Auth" data-name="prism::channel::auth(authenticator)">
+      <a href="../Prism/Channel/Auth.html">Auth</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Channel/Params" data-name="prism::channel::params">
+      <a href="../Prism/Channel/Params.html">Params</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/CORS" data-name="prism::cors">
+      <a href="../Prism/CORS.html">CORS</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/LogHandler" data-name="prism::loghandler">
+      <a href="../Prism/LogHandler.html">LogHandler</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Params" data-name="prism::params">
+      <a href="../Prism/Params.html">Params</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/InvalidParamError" data-name="prism::params::invalidparamerror">
+      <a href="../Prism/Params/InvalidParamError.html">InvalidParamError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/InvalidParamTypeError" data-name="prism::params::invalidparamtypeerror">
+      <a href="../Prism/Params/InvalidParamTypeError.html">InvalidParamTypeError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/ParamNotFoundError" data-name="prism::params::paramnotfounderror">
+      <a href="../Prism/Params/ParamNotFoundError.html">ParamNotFoundError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/ProcError" data-name="prism::params::procerror">
+      <a href="../Prism/Params/ProcError.html">ProcError</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Params/Validation" data-name="prism::params::validation">
+      <a href="../Prism/Params/Validation.html">Validation</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Params/Validation/Error" data-name="prism::params::validation::error">
+      <a href="../Prism/Params/Validation/Error.html">Error</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/ProcHandler" data-name="prism::prochandler">
+      <a href="../Prism/ProcHandler.html">ProcHandler</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Prism/Router" data-name="prism::router">
+      <a href="../Prism/Router.html">Router</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Router/DuplicateRouteError" data-name="prism::router::duplicaterouteerror">
+      <a href="../Prism/Router/DuplicateRouteError.html">DuplicateRouteError</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Prism/Server" data-name="prism::server">
+      <a href="../Prism/Server.html">Server</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/String" data-name="string">
+      <a href="../String.html">String</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/vladfaust/prism/Time" data-name="time">
+      <a href="../Time.html">Time</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Time/Span" data-name="time::span">
+      <a href="../Time/Span.html">Span</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/vladfaust/prism/Union" data-name="union(*t)">
+      <a href="../Union.html">Union</a>
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">module</span> Prism::Action
+
+</h1>
+
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>A callable HTTP action with <a href="https://github.com/vladfaust/callbacks.cr" target="_blank">Callbacks</a> module included.</p>
+
+<p><span class="flag purple">NOTE</span>  <em>(From <a href="https://crystal-lang.org/api/0.23.1/HTTP/Server/Response.html" target="_blank">API</a>) The response #status_code and #headers must be configured before writing the response body. Once response output is written, changing the status and #headers properties has no effect.</em></p>
+
+<pre><code><span class="k">struct</span> <span class="t">MyAction</span>
+  <span class="k">include</span> <span class="t">Prism</span><span class="t">::</span><span class="t">Action</span>
+
+  <span class="k">def</span> <span class="m">call</span>
+    text(<span class="s">&quot;ok&quot;</span>)
+  <span class="k">end</span>
+
+  after <span class="k">do</span>
+    p <span class="s">&quot;MyAction: ok&quot;</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="t">MyAction</span>.call(env)
+<span class="c"># =&gt; &quot;ok&quot;</span></code></pre>
+
+
+
+
+
+  <h2>Included Modules</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type">Callbacks</li>
+  
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/action/auth.cr#L4" target="_blank">
+        prism/action/auth.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/action/params.cr#L4" target="_blank">
+        prism/action/params.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/action.cr#L27" target="_blank">
+        prism/action.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#after-instance-method" class="signature"><strong>#after</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#around%28%26block%29-instance-method" class="signature"><strong>#around</strong>(&block)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#before-instance-method" class="signature"><strong>#before</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#body-instance-method" class="signature"><strong>#body</strong></a>
+        
+          <div class="summary"><p>Lazy string version of request body (read <em>max_body_size</em> bytes on the first call).</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#call-instance-method" class="signature"><strong>#call</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#context%3AHTTP%3A%3AServer%3A%3AContext-instance-method" class="signature"><strong>#context</strong> : HTTP::Server::Context</a>
+        
+          <div class="summary"><p>Current context.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#header%28name%2Cvalue%29-instance-method" class="signature"><strong>#header</strong>(name, value)</a>
+        
+          <div class="summary"><p>Set HTTP header.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#json%28status%3AInt%2Cvalue%29-instance-method" class="signature"><strong>#json</strong>(status : Int, value)</a>
+        
+          <div class="summary"><p>Set the status to <em>status</em>, cast <em>value</em> to JSON and write it into the response body.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#json%28value%29-instance-method" class="signature"><strong>#json</strong>(value)</a>
+        
+          <div class="summary"><p>Cast <em>value</em> to JSON and write it into the response body.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#redirect%28location%3AString%7CURI%2Ccode%3D302%29-instance-method" class="signature"><strong>#redirect</strong>(location : String | URI, code = <span class="n">302</span>)</a>
+        
+          <div class="summary"><p>Set response status code to <em>code</em> and "Location" header to <em>location</em>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#status%28new_statusvalue%29-instance-method" class="signature"><strong>#status</strong>(new_status value)</a>
+        
+          <div class="summary"><p>Set HTTP status code.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#text%28status%3AInt%2Cvalue%29-instance-method" class="signature"><strong>#text</strong>(status : Int, value)</a>
+        
+          <div class="summary"><p>Set the status to <em>status</em> and write text <em>value</em> into the response body.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#text%28value%29-instance-method" class="signature"><strong>#text</strong>(value)</a>
+        
+          <div class="summary"><p>Write text into the response body.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>Macro Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#halt%21%28status%2Cresponse%3Dnil%29-macro" class="signature"><strong>halt!</strong>(status, response = nil)</a>
+        
+          <div class="summary"><p>Set HTTP <em>status</em>, close the response and <strong>stop</strong> the execution.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="after-instance-method">
+      <div class="signature">
+        
+        def <strong>after</strong>
+
+        <a class="method-permalink" href="#after-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/action.cr#L28" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="around(&amp;block)-instance-method">
+      <div class="signature">
+        
+        def <strong>around</strong>(&block)
+
+        <a class="method-permalink" href="#around%28%26block%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/action.cr#L28" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="before-instance-method">
+      <div class="signature">
+        
+        def <strong>before</strong>
+
+        <a class="method-permalink" href="#before-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/action.cr#L28" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="body-instance-method">
+      <div class="signature">
+        
+        def <strong>body</strong>
+
+        <a class="method-permalink" href="#body-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Lazy string version of request body (read <em>max_body_size</em> bytes on the first call).</p>
+
+<pre><code><span class="c"># Action A</span>
+<span class="k">def</span> <span class="m">call</span>
+  body                 <span class="c"># =&gt; &quot;foo&quot;</span>
+  context.request.body <span class="c"># =&gt; nil</span>
+<span class="k">end</span>
+
+<span class="c"># Action B</span>
+<span class="k">def</span> <span class="m">call</span>
+  context.request.body <span class="c"># =&gt; Not nil</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/action.cr#L67" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="call-instance-method">
+      <div class="signature">
+        abstract 
+        def <strong>call</strong>
+
+        <a class="method-permalink" href="#call-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/action.cr#L30" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="context:HTTP::Server::Context-instance-method">
+      <div class="signature">
+        
+        def <strong>context</strong> : HTTP::Server::Context
+
+        <a class="method-permalink" href="#context%3AHTTP%3A%3AServer%3A%3AContext-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Current context.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/action.cr#L72" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="header(name,value)-instance-method">
+      <div class="signature">
+        
+        def <strong>header</strong>(name, value)
+
+        <a class="method-permalink" href="#header%28name%2Cvalue%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Set HTTP header.</p>
+
+<pre><code><span class="k">def</span> <span class="m">call</span>
+  header(<span class="s">&quot;Content-Type&quot;</span>, <span class="s">&quot;application/json&quot;</span>)
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/action.cr#L131" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="json(status:Int,value)-instance-method">
+      <div class="signature">
+        
+        def <strong>json</strong>(status : <a href="../Int.html">Int</a>, value)
+
+        <a class="method-permalink" href="#json%28status%3AInt%2Cvalue%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Set the status to <em>status</em>, cast <em>value</em> to JSON and write it into the response body.
+"Content-Type" header is set to <code>""application/json; charset=utf-8""</code>.</p>
+
+<pre><code><span class="k">def</span> <span class="m">call</span>
+  json(<span class="n">201</span>, {
+    object: object
+  })
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/action.cr#L182" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="json(value)-instance-method">
+      <div class="signature">
+        
+        def <strong>json</strong>(value)
+
+        <a class="method-permalink" href="#json%28value%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Cast <em>value</em> to JSON and write it into the response body.
+"Content-Type" header is set to <code>""application/json; charset=utf-8""</code>.</p>
+
+<pre><code><span class="k">def</span> <span class="m">call</span>
+  json(object)
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/action.cr#L182" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="redirect(location:String|URI,code=302)-instance-method">
+      <div class="signature">
+        
+        def <strong>redirect</strong>(location : <a href="../String.html">String</a> | URI, code = <span class="n">302</span>)
+
+        <a class="method-permalink" href="#redirect%28location%3AString%7CURI%2Ccode%3D302%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Set response status code to <em>code</em> and "Location" header to <em>location</em>.</p>
+
+<p>Does <strong>not</strong> interrupt the call.</p>
+
+<pre><code><span class="k">def</span> <span class="m">call</span>
+  redirect(<span class="s">&quot;https://google.com&quot;</span>)
+  puts <span class="s">&quot;will be called&quot;</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/action.cr#L145" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="status(new_statusvalue)-instance-method">
+      <div class="signature">
+        
+        def <strong>status</strong>(new_status value)
+
+        <a class="method-permalink" href="#status%28new_statusvalue%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Set HTTP status code.</p>
+
+<pre><code><span class="k">def</span> <span class="m">call</span>
+  status(<span class="n">400</span>)
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/action.cr#L120" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="text(status:Int,value)-instance-method">
+      <div class="signature">
+        
+        def <strong>text</strong>(status : <a href="../Int.html">Int</a>, value)
+
+        <a class="method-permalink" href="#text%28status%3AInt%2Cvalue%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Set the status to <em>status</em> and write text <em>value</em> into the response body.
+"Content-Type" header is set to <code>""text/html; charset=utf-8""</code>.</p>
+
+<pre><code><span class="k">def</span> <span class="m">call</span>
+  text(<span class="n">200</span>, <span class="s">&quot;ok&quot;</span>)
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/action.cr#L152" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="text(value)-instance-method">
+      <div class="signature">
+        
+        def <strong>text</strong>(value)
+
+        <a class="method-permalink" href="#text%28value%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Write text into the response body.
+"Content-Type" header is set to <code>""text/html; charset=utf-8""</code>.</p>
+
+<pre><code><span class="k">def</span> <span class="m">call</span>
+  text(<span class="s">&quot;ok&quot;</span>)
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/action.cr#L152" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>Macro Detail</h2>
+  
+    <div class="entry-detail" id="halt!(status,response=nil)-macro">
+      <div class="signature">
+        
+        macro <strong>halt!</strong>(status, response = nil)
+
+        <a class="method-permalink" href="#halt%21%28status%2Cresponse%3Dnil%29-macro">#</a>
+      </div>
+      
+        <div class="doc"><p>Set HTTP <em>status</em>, close the response and <strong>stop</strong> the execution.
+Optionally specify <em>response</em>, otherwise print a default HTTP response for this <em>status</em>.</p>
+
+<pre><code><span class="k">def</span> <span class="m">call</span>
+  halt!(<span class="n">403</span>) <span class="c"># Will print &quot;Unauthorized&quot; into the response body</span>
+  text(<span class="s">&quot;ok&quot;</span>) <span class="c"># This line will not be called</span>
+<span class="k">end</span>
+
+<span class="k">def</span> <span class="m">call</span>
+  halt!(<span class="n">500</span>, <span class="s">&quot;Something&#39;s wrong!&quot;</span>) <span class="c"># Will print &quot;Something&#39;s wrong!&quot; into the response body</span>
+<span class="k">end</span>
+
+<span class="k">def</span> <span class="m">call</span>
+  halt!(<span class="n">409</span>, {error: <span class="s">&quot;Oops&quot;</span>}) <span class="c"># Will print &quot;Oops&quot; and set content type to JSON</span>
+<span class="k">end</span>
+
+<span class="k">def</span> <span class="m">call</span>
+  halt!(<span class="n">403</span>, <span class="t">PaymentError</span>) <span class="c"># Will call #to_json on PaymentError</span>
+<span class="k">end</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/vladfaust/prism/blob/606bba14fe6ce16e49591f1077bc194c05c74ff7/src/prism/action.cr#L99" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+</div>
+
+</body>
+</html>
